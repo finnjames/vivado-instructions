@@ -39,9 +39,16 @@ Now, pick up with _Part I: Tutorial_ of Lab 1, available on the course website.
 
 ## 2. Linux
 
-Assuming you are using Ubuntu, the installation instructions are identical to the Windows instructions above, except that you must download the _Linux Self Extracting Web Installer_ instead.
+Assuming you are using Ubuntu, the installation instructions are identical to the Windows instructions above, with two exceptions. The first is that you must download the _Linux Self Extracting Web Installer_ instead. Second, there is no option for cable drivers in the installer, so they must be installed manually. After completing Step 2 of the Windows install instructions, follow Step 2.5 below.
 <!-- TODO: include hack for making other distros compatible -->
-If you are using a distro besides Ubuntu, you are probably used to things not working right away, anyway. We encourage you to Read The Manual (and come to Office Hours!).
+> **Note:** If you are using a distro besides Ubuntu, you are probably used to things not working right away, anyway. We encourage you to Read The Manual (and come to Office Hours!).
+
+### Step 2.5: Install the cable drivers
+
+Enter the following command as root, with `VIVADO_INSTALL_DIR` replaced with the location of your Vivado install location:
+```bash
+$ VIVADO_INSTALL_DIR/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers
+```
 
 ## 3. macOS
 As a Mac user, things are a little more ~~frustrating~~ complicated. You will need some sort of virtualization software. We have found both VirtualBox and Parallels to work. In this guide, we will be creating a Windows 10 Virtual Machine with VirtualBox.
