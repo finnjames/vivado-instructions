@@ -23,30 +23,36 @@ Download the Xilinx Unified Installer 2021.x: Windows Self Extracting Web Instal
 
 Open the installer. Select _Vivado HL WebPACK_.
 
-On the next screen, under Devices, the only box that needs to be checked is _Artix-7_ (under _7 series_). To save disk space, you may uncheck SoCs and UltraScale since we do not need them. On the following screens, use the default options. If you would like to change hte location of the installed software, **be sure there are no spaces in the path name**. Under _Installation Options_, be sure _Install Cable Drivers_ option is checked. Click _Install_.
+On the next screen, under Devices, the only box that needs to be checked is _Artix-7_ (under _7 series_). To save disk space, you may uncheck _SoCs_ and _UltraScale_ since we do not need them. On the following screens, use the default options.
 
-_Note:_ A free license is included with _Vivado HL WebPACK_. While it has some project size limitations, it is more than adequate for our purposes.
+> **Note:** It's fine if you would like to change the location of the installed software, but if you do, **be sure there are no spaces in the path name**, as it will cause errors in later labs.
+
+Under _Installation Options_, be sure _Install Cable Drivers_ option is checked. Click _Install_.
+
+> **Note:** A free license is included with _Vivado HL WebPACK_. While it has some project size limitations, it is more than adequate for our purposes.
+
+### Step 3: Complete the first lab
+
+Now, pick up with _Part I: Tutorial_ of Lab 1, available on the course website.
+
+> **Troubleshooting:** In case of problems installing the software, submit a post to the Piazza discussion board. It is likely that other students are encountering the same issue. Seek help early instead of the day before the assignment is due!
 
 ## 2. Linux
 
-This guide was written assuming you are using Ubuntu, or another similar Debian based distro. If you are using something else, you are probably used to things not working right away, so we encourage you to Read The Manual (and come to Office Hours!).
-
-### Step 1: Download Vivado
-
-Go to this URL: https://www.xilinx.com/support/download.html 
-
-### Step 2: Install Vivado
-
-There are a lot of configuration options for this part.
+Assuming you are using Ubuntu, the installation instructions are identical to the Windows instructions above, except that you must download the _Linux Self Extracting Web Installer_ instead.
+<!-- TODO: include hack for making other distros compatible -->
+If you are using a distro besides Ubuntu, you are probably used to things not working right away, anyway. We encourage you to Read The Manual (and come to Office Hours!).
 
 ## 3. macOS
-As a Mac user, things are a little more ~~frustrating~~ interesting. First of all, you will need some sort of virtualization software. We have found both VirtualBox and Parallels to work. In this guide, we will be creating a Windows 10 Virtual Machine with VirtualBox. The Windows ISO file (Step 4) may take a while depending on your connection, so you can go ahead and start downloading it while you’re following steps 1–3.
+As a Mac user, things are a little more ~~frustrating~~ complicated. You will need some sort of virtualization software. We have found both VirtualBox and Parallels to work. In this guide, we will be creating a Windows 10 Virtual Machine with VirtualBox.
+
+> **Note:** The Windows ISO file (Step 4) may take a while to download depending on your connection. Feel free to go ahead and start downloading it before following steps 1–3.
 
 ### Step 1: Download VirtualBox
 
-From this url: https://www.virtualbox.org/wiki/Downloads 
+Go to this url: https://www.virtualbox.org/wiki/Downloads 
 
-Select “OS X Hosts”
+Click “OS X Hosts” to download the VirtualBox installer for macOS.
 
 ### Step 2: Install VirtualBox
 
@@ -119,11 +125,11 @@ Now, start the VM by clicking “Start.” If VirtualBox asks about controlling 
 
 Use the appropriate language and keyboard settings and click Install.
 
+> **Optional:** to make the Windows screen readable on HiDPI displays, click View > Virtual Screen 1 > Scale to 200%
+
 ![](./screenshots/virtualbox/14-vm-started.png)
 
 You can safely ignore the product key alert for the entire class. It is not necessary to have a licensed version of Windows for COMP541.
-
-_Optional:_ to make the Windows screen readable on HiDPI displays, click View > Virtual Screen 1 > Scale to 200%
 
 ![](./screenshots/virtualbox/15-activate-windows.png)
 
@@ -133,7 +139,7 @@ Select Windows 10 Education. Accept the Terms of Service. Select Custom Install 
 
 After that, follow standard install instructions. Set the region, keyboard layout, and log in to Microsoft.
 
-_Optional:_ if you don’t want to log in to Microsoft, you can get around the nearly-mandatory login screen by disabling the internet connection temporarily. You can either just turn off wifi or unplug ethernet, or select Devices > Network and uncheck “Connect Network Adapter.” Then, click “Domain Join,” and when Windows cannot connect to the internet, it will revert to standard account creation procedure. Enter your name, password, and security questions. For privacy settings, enter whatever you like, but know that none of the options are required for COMP541, so feel free to disable all of them.
+> **Optional:** if you don’t want to log in to Microsoft, you can get around the nearly-mandatory login screen by disabling the internet connection temporarily. You can either just turn off wifi or unplug ethernet, or select Devices > Network and uncheck “Connect Network Adapter.” Then, click “Domain Join,” and when Windows cannot connect to the internet, it will revert to standard account creation procedure. Enter your name, password, and security questions. For privacy settings you may enter whatever you like, but know that none of the options are required for COMP541, so feel free to disable all of them.
 
 ### Step 6: Install VirtualBox Guest Additions
 
