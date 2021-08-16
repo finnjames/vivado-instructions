@@ -154,6 +154,16 @@ Click Devices > Insert Guest Additions CD image...
 
 It should appear in your VM as though you had actually inserted a CD (often under “This PC”). Double click on “VBoxWindowsAdditions-amd64” and allow the app to make changes.
 
-### Step 7: Download Vivado
+### Step 7: Install VirtualBox Extension Pack
+
+Go to this URL: https://www.virtualbox.org/wiki/Downloads
+
+Download and install the _Extension Pack_. It should be the same version as your copy of VirtualBox.
+
+Make sure the VM is shut down, then go to _Settings > Ports > USB_, and select _2.0_ or _3.0_ for the version.
+
+> **Note:** Some students will have issues with these USB drivers in Lab 3 and later. If you are having trouble, try switching from USB 2.0 to 3.0 or vice versa.
+
+### Step 8: Download Vivado
 
 Now, in the virtual machine, follow the **1. Windows** instructions above.
