@@ -29,7 +29,11 @@ On the next screen, under Devices, the only box that needs to be checked is _Art
 
 Under _Installation Options_, be sure _Install Cable Drivers_ option is checked. Click _Install_.
 
-> **Note:** A free license is included with _Vivado HL WebPACK_. While it has some project size limitations, it is more than adequate for our purposes.
+> **Note:** A free license is included with _Vivado ML Standard_. While it has some project size limitations, it is more than adequate for our purposes.
+
+![](./screenshots/vivado/vivado-custom-install.png)
+
+![](./screenshots/vivado/vivado-installation-summary.png)
 
 ### Step 3: Complete the first lab
 
