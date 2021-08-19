@@ -17,11 +17,11 @@ Running Windows natively makes this process relatively straightforward.
 
 Go to this URL: https://www.xilinx.com/support/download.html
 
-Download the Xilinx Unified Installer 2021.x: Windows Self Extracting Web Installer (EXE).
+Under Vivado ML Edition, download the Xilinx Unified Installer 2021.x: Windows Self Extracting Web Installer (EXE).
 
 ### Step 2: Install Vivado
 
-Open the installer. Select _Vivado HL WebPACK_.
+Open the installer. Select _Vivado ML Standard_.
 
 On the next screen, under Devices, the only box that needs to be checked is _Artix-7_ (under _7 series_). To save disk space, you may uncheck _SoCs_ and _UltraScale_ since we do not need them. On the following screens, use the default options.
 
@@ -152,7 +152,7 @@ After that, follow standard install instructions. Set the region, keyboard layou
 
 Click Devices > Insert Guest Additions CD image...
 
-It should appear in your VM as though you had actually inserted a CD (often under “This PC”). Double click on “VBoxWindowsAdditions-amd64” and allow the app to make changes.
+It should appear in your VM as though you had actually inserted a CD (often under “This PC”). Double click on “VBoxWindowsAdditions” and allow the app to make changes.
 
 ### Step 7: Install VirtualBox Extension Pack
 
